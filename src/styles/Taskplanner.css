@@ -1,0 +1,125 @@
+/* Center everything and set a light background */
+.app-container {
+  background-color: #f3f4f6;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+}
+
+/* The main planner box */
+.planner-box {
+  background-color: white;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 640px;
+}
+
+/* Headings */
+.planner-box h1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #1f2937;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.planner-box h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 16px;
+}
+
+.planner-box h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+/* Paragraphs */
+.planner-box p {
+  color: #4b5563;
+  margin-bottom: 24px;
+}
+
+/* Textarea */
+.planner-box textarea {
+  width: 100%;
+  height: 96px;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  resize: none;
+}
+
+.planner-box textarea:focus {
+  outline: none;
+  border-color: #10b981;
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.2);
+}
+
+/* Button */
+.planner-box button {
+  width: 100%;
+  padding: 12px;
+  background-color: #10b981;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.planner-box button:hover {
+  background-color: #059669;
+}
+
+/* Spinner */
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #e5e7eb;
+  border-top: 4px solid #3b82f6;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Schedule section */
+.schedule {
+  margin-top: 24px;
+}
+
+.schedule ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 24px;
+}
+
+.schedule li {
+  background-color: #f3f4f6;
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  color: #374151;
+}
